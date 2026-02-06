@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 function Research() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section id="research" className="py-24 px-8">
       <h2 className="text-4xl font-bold text-purple-400 mb-10">
@@ -10,15 +13,16 @@ function Research() {
       {/* Wrapper */}
       <motion.div
         initial="rest"
-        whileHover="hover"
-        animate="rest"
+        animate={isOpen ? "hover" : "rest"}
+        whileHover={{ scale: 1 }} // keep hover scaling
         className="relative max-w-4xl mx-auto cursor-pointer"
+        onClick={() => setIsOpen(!isOpen)} // toggle on mobile
       >
         {/* Research Image */}
         <motion.img
           variants={{
             rest: { scale: 1 },
-            hover: { scale: 1.05 }
+            hover: { scale: 1.05 },
           }}
           transition={{ duration: 0.4 }}
           src="/research.png" // put image in public folder
@@ -30,7 +34,7 @@ function Research() {
         <motion.div
           variants={{
             rest: { y: 120, opacity: 0 },
-            hover: { y: 0, opacity: 1 }
+            hover: { y: 0, opacity: 1 },
           }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="absolute inset-0 glass p-8 rounded-xl flex flex-col justify-center"
