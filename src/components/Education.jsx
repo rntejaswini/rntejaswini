@@ -42,7 +42,10 @@ export default function Education() {
             </p>
 
             <div className="flex justify-between items-center text-gray-300">
-              <span className="font-medium">{edu.cgpa && `CGPA: ${edu.cgpa}`}</span>
+        <span className="font-medium text-purple-300">
+  {edu.cgpa && `CGPA: ${edu.cgpa}`}
+</span>
+
               <span className="text-purple-300 font-semibold">{edu.year}</span>
             </div>
           </div>

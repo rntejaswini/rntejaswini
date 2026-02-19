@@ -27,7 +27,7 @@ export const achievementsData = [
   },
   {
     id: 3,
-    title: "8-hour Internal Hackathon 🖥️",
+    title: "8-hours Internal Hackathon 🖥️",
     shortDesc:
       "Participated in an internal hackathon organized by ISE Department. Brainstormed, coded, and innovated under time constraints.",
     team: [],
@@ -44,7 +44,7 @@ export const achievementsData = [
       "Recognized as the Best Student at my school for academic excellence and overall contribution to extracurricular activities.",
     team: [],
     guide: "",
-    dept: "My School",
+    dept: "SMS English Higher Primary School",
     image: "/achievements/best.png",
     certificate: "/certificates/best student award.pdf",
     details: `I was honored with the Best Student Award for outstanding performance in academics and active participation in school events. A proud moment that motivates me to continue excelling!`

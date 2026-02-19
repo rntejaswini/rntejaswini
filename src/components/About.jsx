@@ -72,7 +72,7 @@ const About = () => {
         {/* BUTTONS */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-4">
           <a
-            href="/_Tejaswini _ R N _ Resume.pdf"
+            href="public\Tejaswini R N Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="

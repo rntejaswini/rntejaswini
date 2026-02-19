@@ -6,7 +6,7 @@ const Footer = () => (
       
       {/* LEFT: COPYRIGHT */}
       <p className="text-sm md:text-base text-gray-400">
-        © {new Date().getFullYear()} <strong>Tejaswini RN</strong> · CS & Software Enthusiast
+        © {new Date().getFullYear()} <strong>Tejaswini RN</strong> · Software Enthusiast
       </p>
 
       {/* CENTER: TECH ICON */}
